@@ -32,14 +32,14 @@ Copy a DESIGN.md into your project, tell your AI agent "build me a page that loo
 
 [DESIGN.md](https://stitch.withgoogle.com/docs/design-md/overview/) is a new concept introduced by Google Stitch. A plain-text design system document that AI agents read to generate consistent UI.
 
-It's just a markdown file. No Figma exports, no JSON schemas, no special tooling. Drop it into your project root and any AI coding agent or Google Stitch instantly understands how your UI should look. Markdown is the format LLMs read best, so there's nothing to parse or configure.
+It's just a markdown file. No Figma exports, no JSON schemas, no special tooling. Drop it into your project root and any AI coding agent or Google Stitch instantly understands how your UI should look and feel.
 
 | File | Who reads it | What it defines |
 |------|-------------|-----------------|
 | `AGENTS.md` | Coding agents | How to build the project |
 | `DESIGN.md` | Design agents | How the project should look and feel |
 
-**This repo provides ready-to-use DESIGN.md files** extracted from real websites. 
+**This repo provides ready-to-use DESIGN.md files** extracted from real websites.
 
 ## Request a DESIGN.md
 
@@ -162,6 +162,20 @@ Each site includes:
 2. Tell your AI agent to use it.
 
 
+## Optional AI Agent Skills
+
+This repository provides design references in `DESIGN.md` format. For reusable agent workflows that help plan or evaluate design work, see the separate [Agentic Awesome Skills](https://github.com/sickn33/agentic-awesome-skills) project. It is not vendored into this repository; use its installer to add skills for your agent:
+
+```bash
+# Claude Code
+npx agentic-awesome-skills --claude
+
+# Codex CLI
+npx agentic-awesome-skills --codex
+```
+
+Run the command for the agent you use from your project directory, and review the upstream README and skill instructions before installing or applying third-party content. See the [upstream installation guide](https://github.com/sickn33/agentic-awesome-skills#installation) for current options and paths.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
@@ -176,4 +190,4 @@ Before opening a PR, please [open an issue](https://github.com/VoltAgent/awesome
 
 MIT License - see [LICENSE](LICENSE)
 
-This repository is a curated collection of design system documents extracted from public websites. All DESIGN.md files are provided "as is" without warranty. The extracted design tokens represent publicly visible CSS values. We do not claim ownership of any site's visual identity. These documents exist to help AI agents generate consistent UI.
+This repository is a curated collection of design system documents extracted from public websites. All DESIGN.md files are provided "as is" without warranty. The extracted design tokens represent each site's visual style and are not affiliated with or endorsed by those brands.
